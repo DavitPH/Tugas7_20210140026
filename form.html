@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="form.css" rel="stylesheet">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulir Calon Pegawai</legend>
+
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <input type="text" id="alamat" name="alamat">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin:</label><br>
+                <div class="radio-group">
+                    <input type="radio" id="laki-laki" name="jk" value="laki-laki">
+                    <label for="laki-laki">Laki-laki</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="perempuan" name="jk" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Bahasa pemrograman yang dikuasai:</label><br>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="web" name="pemrograman" value="web">
+                    <label for="web">Web</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="mobile" name="pemrograman" value="mobile">
+                    <label for="mobile">Mobile</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="desktop" name="pemrograman" value="desktop">
+                    <label for="desktop">Desktop</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="kota">Kota asal:</label><br>
+                <select id="kota" name="kota">
+                    <option value="" disabled selected>Pilih Kota Asal</option>
+                    <option value="semarang">Semarang</option>
+                    <option value="bandung">Bandung</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="alasan">Apa yang membuat kami memilih Anda?</label><br>
+                <textarea id="alasan" rows="10" cols="60" placeholder="Tulis jawaban Anda di sini"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </fieldset>
+    </form>
+    <button class="back"><a href="index.html">Home</a></button>
+</body>
+
+</html>
